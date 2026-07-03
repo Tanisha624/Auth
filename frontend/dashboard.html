@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard — Auth</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="navbar-brand">Auth</a>
+    <div class="navbar-actions">
+      <a href="#" class="nav-link" id="logout-link">Log out</a>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div class="card">
+      <h1>Dashboard</h1>
+      <p class="subtitle" id="loading-text">Verifying session…</p>
+
+      <div id="user-meta" style="display:none">
+        <div class="meta-row"><span>Username</span><span id="meta-username"></span></div>
+        <div class="meta-row"><span>Email</span><span id="meta-email"></span></div>
+        <div class="meta-row"><span>User ID</span><span id="meta-id"></span></div>
+      </div>
+
+      <div id="message" class="message"></div>
+
+      <button class="secondary" id="logout-btn" style="margin-top:20px">Log out</button>
+    </div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

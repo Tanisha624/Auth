@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Log in — Auth</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="navbar-brand">Auth</a>
+    <div class="navbar-actions">
+      <a href="signup.html" class="nav-link">Sign up</a>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div class="card">
+      <h1>Log in</h1>
+      <p class="subtitle">Enter your credentials to continue.</p>
+
+      <form id="login-form">
+        <label for="identifier">Email or username</label>
+        <input id="identifier" type="text" required />
+
+        <label for="password">Password</label>
+        <input id="password" type="password" required />
+
+        <button type="submit" id="submit-btn">Log in</button>
+      </form>
+
+      <div id="message" class="message"></div>
+      <p class="foot-link">Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

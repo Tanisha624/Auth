@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sign up — Auth</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="navbar-brand">Auth</a>
+    <div class="navbar-actions">
+      <a href="login.html" class="nav-link">Log in</a>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div class="card">
+      <h1>Create account</h1>
+      <p class="subtitle">Your password is hashed before it's ever stored.</p>
+
+      <form id="signup-form">
+        <label for="username">Username</label>
+        <input id="username" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required />
+
+        <label for="password">Password</label>
+        <input id="password" type="password" minlength="8" required />
+
+        <button type="submit" id="submit-btn">Sign up</button>
+      </form>
+
+      <div id="message" class="message"></div>
+      <p class="foot-link">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+</html>
